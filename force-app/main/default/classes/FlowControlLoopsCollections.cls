@@ -32,7 +32,7 @@ public with sharing class FlowControlLoopsCollections {
         if (x > y) {
             return 'Hello World!';
         } else {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         }
     }
 
@@ -46,13 +46,11 @@ public with sharing class FlowControlLoopsCollections {
      * @return true if the person is eligible to vote, false otherwise.
      */
     public static Boolean votingEligibility(Integer age) {
-        Boolean isEligibleToVote;
         if (age >= 18) {
-            isEligibleToVote = true;
+            return true;
         } else {
-            isEligibleToVote = false;
+            return false;
         }
-        return isEligibleToVote; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -74,7 +72,7 @@ public with sharing class FlowControlLoopsCollections {
         } else {
             largestNum = num2;
         }
-        return largestNum; // Replace null with the variable you used to store the result
+        return largestNum;
     }
 
 
@@ -88,7 +86,7 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static String checkNumber(Integer a) {
         if (a == null) {
-            return null; // Replace null with the variable you used to store the result
+            return null;
         } else if (a == 0) {
             return 'Zero';
         } else if (a < 0) {
@@ -110,8 +108,8 @@ public with sharing class FlowControlLoopsCollections {
         if (a == null) {
             return null;
         }
-        Integer remainder = Math.mod(a,2);
-        if (remainder == 0) {
+        
+        if (Math.mod(a,2) == 0) {
             return 'Even';
         } else {
             return 'Odd';
@@ -131,7 +129,7 @@ public with sharing class FlowControlLoopsCollections {
         } else if (a == '') {
             return 'Empty';
         } else {
-            return 'Contains Text'; // Replace null with the variable you used to store the result
+            return 'Contains Text';
         }
     }
 
@@ -176,7 +174,7 @@ public with sharing class FlowControlLoopsCollections {
          for (Integer i = 1; i <= intLimit; i++ ){
             result = result + i;
          }
-        return result; // Replace null with the variable you used to store the result
+        return result;
     }
 
     /**
@@ -187,15 +185,11 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static String returnHelloWorld() {
         // Initialize the result String
-
-        // Use a for loop to append 'Hello World!;' to the result string three times
-        /* 
-         for (){
-            
-         }
-        */
-
-        return null; // Replace null with the variable you used to store the result
+        String result = '';
+        for (Integer i=0; i<3; i++){
+            result = result + 'Hello World!; ';
+        }
+        return result;
     }
 
     /**
