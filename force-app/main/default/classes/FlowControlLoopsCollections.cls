@@ -342,8 +342,15 @@ public with sharing class FlowControlLoopsCollections {
     public static Decimal countMoney() {
         // The list of money in the wallet, represented in dollars and cents
         List<Decimal> moneyInWallet = new List<Decimal>{0.50, 10, 3.84, 24.60, 9.08, 50, 4.90}; //DO NOT CHANGE
+        Decimal sum = 0;
+        for (Decimal amt : moneyInWallet) {
+            sum += amt;
+            if (sum > 40) {
+                break;
+            }
+        }
 
-        return null; // Replace null with the variable you used to store the result
+        return sum; // Replace null with the variable you used to store the result
     }
 
     /**
