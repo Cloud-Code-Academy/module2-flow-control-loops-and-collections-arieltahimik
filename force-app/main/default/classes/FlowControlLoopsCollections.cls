@@ -108,7 +108,7 @@ public with sharing class FlowControlLoopsCollections {
         if (a == null) {
             return null;
         }
-        
+        // If remainder is equal to zero then 'a' is Even else Odd
         if (Math.mod(a,2) == 0) {
             return 'Even';
         } else {
@@ -158,7 +158,7 @@ public with sharing class FlowControlLoopsCollections {
         } else {
             grade = 'F';
         }
-        return grade; // Replace null with the variable you used to store the result
+        return grade; 
     }
 
 
@@ -214,7 +214,7 @@ public with sharing class FlowControlLoopsCollections {
             }
         }
         // Return the final result string
-        return result; // Replace null with the variable you used to store the result
+        return result; 
     }
 
     /**
@@ -232,7 +232,7 @@ public with sharing class FlowControlLoopsCollections {
         intList.add(3);  // add 3
 
         // Return the populated list
-        return intList; // Replace null with the variable you used to store the result
+        return intList;
     }
 
     /**
@@ -247,7 +247,7 @@ public with sharing class FlowControlLoopsCollections {
         // Remove the 3rd element (number 3) from the list
             numberList.remove(2);
         // Return the updated list
-        return numberList; // Replace null with the variable you used to store the result
+        return numberList; 
     }
 
     /**
@@ -266,7 +266,7 @@ public with sharing class FlowControlLoopsCollections {
             intList.add(i);
         }
 
-        return intList; // Replace null with the variable you used to store the result
+        return intList; 
     }
 
     /**
@@ -284,7 +284,7 @@ public with sharing class FlowControlLoopsCollections {
         //add strings to the set
         stringSet.addAll(inputList);
 
-        return stringSet; // Replace null with the variable you used to store the result
+        return stringSet; 
     }
 
     /**
@@ -305,7 +305,7 @@ public with sharing class FlowControlLoopsCollections {
             sum += n;
         }
 
-        return sum; // Replace null with the variable you used to store the result
+        return sum; 
     }
 
     /**
@@ -329,7 +329,7 @@ public with sharing class FlowControlLoopsCollections {
             }
         }
 
-        return index; // Replace null with the variable you used to store the result
+        return index; 
     }
 
     /**
@@ -350,7 +350,7 @@ public with sharing class FlowControlLoopsCollections {
             }
         }
 
-        return sum; // Replace null with the variable you used to store the result
+        return sum; 
     }
 
     /**
@@ -370,7 +370,7 @@ public with sharing class FlowControlLoopsCollections {
         fruitQtyMap.put('Pears', 20);  // add Pears => 20
         fruitQtyMap.put('Grapes', 25);  // add Grapes => 25
 
-        return fruitQtyMap; // Replace null with the variable you used to store the result
+        return fruitQtyMap; 
     }
 
     /**
@@ -397,7 +397,7 @@ public with sharing class FlowControlLoopsCollections {
         empSalary = salary.get(employeeName);
 
         // Return the salary of the employee, or null if the employee is not found in the Map
-        return empSalary; // Replace null with the variable you used to store the result
+        return empSalary; 
     }
 
     /**
@@ -432,7 +432,7 @@ public with sharing class FlowControlLoopsCollections {
             }
         }
         // Return the list of high paid employees
-        return highPaidEmployees; // Replace null with the variable you used to store the result
+        return highPaidEmployees; 
     }
 
 }
